@@ -1,0 +1,67 @@
+################################################################################
+# Python Package Dependencies for Age Estimation Project
+################################################################################
+#
+# This file specifies all required Python libraries for training and inference
+# of the age estimation model using Swin Transformer architecture.
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# For Google Colab environment:
+#   !pip install -r requirements.txt
+#
+################################################################################
+
+# PyTorch - Core deep learning framework
+# Provides tensor operations, automatic differentiation, and neural network modules
+# Used for: model architecture, training loops, GPU acceleration
+torch>=2.0.0
+torchvision>=0.15.0
+
+# TIMM - PyTorch Image Models library
+# Provides state-of-the-art vision transformer architectures including Swin Transformer
+# Used for: pre-trained Swin Transformer backbone for age estimation
+timm>=0.9.0
+
+# Data Processing and Analysis
+# Pandas: for CSV/dataframe operations and data manipulation
+# Used for: organizing file paths, age labels, train/val splits
+pandas>=1.5.0
+
+# Image Processing
+# Pillow: Python Imaging Library for loading and processing images
+# Used for: reading JPG/PNG files, image conversions
+pillow>=9.0.0
+
+# Machine Learning Utilities
+# Scikit-learn: provides train/test splitting and evaluation metrics
+# Used for: stratified train/validation split, MAE calculation
+scikit-learn>=1.0.0
+
+# Progress Tracking
+# TQDM: displays progress bars for loops and operations
+# Used for: monitoring training epochs and batch processing
+tqdm>=4.65.0
+
+# Optional: Matplotlib for visualization
+# matplotlib>=3.5.0
+
+# Optional: NumPy (usually installed with PyTorch)
+# numpy>=1.21.0
+
+
+################################################################################
+# GPU Support Notes
+################################################################################
+#
+# For CUDA 11.8 (recommended for most systems):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#
+# For CPU-only installation:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+# For Google Colab:
+#   CUDA is pre-installed, just use standard pip install
+#
+################################################################################
