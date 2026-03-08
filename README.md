@@ -34,6 +34,8 @@ The architecture consists of:
 To run this module, the following weight file must be in the project root:
 - **`checkpoint_fold_3.pth`**: Trained weights for the Swin Transformer model.
 
+📥 **Download all weights here**: [Google Drive - ChronoFace Weights](https://drive.google.com/drive/folders/10_EO8AE7Fqk7aJcVDLWeXDiSA9fClN15?usp=sharing) (Please place them in the project root folder).
+
 ---
 
 ## 🛠️ Installation & Setup
